@@ -1,0 +1,28 @@
+# == Schema Information
+#
+# Table name: orders
+#
+#  id           :uuid             not null, primary key
+#  full_name    :string
+#  email        :string
+#  phone        :string
+#  address      :string
+#  params       :hstore
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  trade_number :string
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  full_name: MyString
+  email: MyString
+  phone: MyString
+  address: MyString
+
+two:
+  full_name: MyString
+  email: MyString
+  phone: MyString
+  address: MyString

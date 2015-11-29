@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'active_merchant_pay2go'
+gem 'jiazi'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

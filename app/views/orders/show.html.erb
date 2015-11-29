@@ -1,0 +1,14 @@
+<% payment_service_for  @order,
+                        @order.email,
+                        service: :pay2go,
+                        html: { :id => 'pay2go-form', :method => :post } do |service| %>
+  <% service.time_stamp @order.created_at %>
+  <% service.merchant_order_no @order.trade_number %>
+  <% service.amt @order.price.to_i %>
+  <% service.item_desc @order.id %>
+  <% service.email @order.email %>
+  <% service.login_type 0 %>
+  <% service.encrypted_data %>
+  <% service.hash_raw_data %>
+  <%= submit_tag '付款' %>
+<% end %>

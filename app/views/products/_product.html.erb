@@ -1,0 +1,11 @@
+<tr>
+  <td>
+    <%= product.title %>
+  </td>
+  <td>
+    <%= product.price %>
+  </td>
+  <td>
+    <%= link_to '訂購', line_items_path(product_id: product.id), method: :post%>
+  </td>
+</tr>

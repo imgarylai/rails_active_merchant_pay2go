@@ -1,0 +1,7 @@
+<h1>商品列表</h1>
+<ul>
+  <% current_cart.line_items.each do |item| %>
+    <li><%= item.product_name %> $: <%= item.price %> </li>
+  <% end %>
+  <%= link_to "Place Order", new_order_path %>
+</ul>
